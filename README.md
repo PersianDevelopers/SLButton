@@ -8,6 +8,13 @@
 Simple Loading Button
 Very easy to use
 
+# Installation with CocoaPods
+
+```ruby
+platform :ios, "7.0"
+pod 'SLButton', '~> 0.0.1'
+```
+
 # How to Use
 import "SLButton.h"
 
@@ -17,11 +24,11 @@ Optional Properties :
 + DisableWhileLoading ( disable button while loading )
 
 # Methods Calling
+```objc
+[button_object showloading] // to loading mode
 
-[obj showloading] to loading mode
-
-[obj hideLoading] to normal mode
-
+[button_object hideLoading] // to normal mode
+```
 # Requirements
 + iOS >= 7.0
 
