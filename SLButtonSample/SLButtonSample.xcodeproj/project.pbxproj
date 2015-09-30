@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A08B9D041BBC26520097D689 /* SLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B9D031BBC26520097D689 /* SLButton.m */; settings = {ASSET_TAGS = (); }; };
+		A09076341BBB27AE004B4DE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A09076331BBB27AE004B4DE8 /* main.m */; };
+		A09076371BBB27AE004B4DE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A09076361BBB27AE004B4DE8 /* AppDelegate.m */; };
+		A090763A1BBB27AE004B4DE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A09076391BBB27AE004B4DE8 /* ViewController.m */; };
+		A090763D1BBB27AE004B4DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A090763B1BBB27AE004B4DE8 /* Main.storyboard */; };
+		A090763F1BBB27AE004B4DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A090763E1BBB27AE004B4DE8 /* Assets.xcassets */; };
+		A09076421BBB27AE004B4DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09076401BBB27AE004B4DE8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A08B9D021BBC26520097D689 /* SLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLButton.h; sourceTree = "<group>"; };
+		A08B9D031BBC26520097D689 /* SLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLButton.m; sourceTree = "<group>"; };
+		A090762F1BBB27AE004B4DE8 /* SLButtonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLButtonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09076331BBB27AE004B4DE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A09076351BBB27AE004B4DE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A09076361BBB27AE004B4DE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A09076381BBB27AE004B4DE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A09076391BBB27AE004B4DE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A090763C1BBB27AE004B4DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A090763E1BBB27AE004B4DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A09076411BBB27AE004B4DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A09076431BBB27AE004B4DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A090762C1BBB27AE004B4DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A08B9D011BBC26520097D689 /* SLButton */ = {
+			isa = PBXGroup;
+			children = (
+				A08B9D021BBC26520097D689 /* SLButton.h */,
+				A08B9D031BBC26520097D689 /* SLButton.m */,
+			);
+			name = SLButton;
+			path = ../../SLButton;
+			sourceTree = "<group>";
+		};
+		A09076261BBB27AE004B4DE8 = {
+			isa = PBXGroup;
+			children = (
+				A09076311BBB27AE004B4DE8 /* SLButtonSample */,
+				A09076301BBB27AE004B4DE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A09076301BBB27AE004B4DE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A090762F1BBB27AE004B4DE8 /* SLButtonSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A09076311BBB27AE004B4DE8 /* SLButtonSample */ = {
+			isa = PBXGroup;
+			children = (
+				A08B9D011BBC26520097D689 /* SLButton */,
+				A09076351BBB27AE004B4DE8 /* AppDelegate.h */,
+				A09076361BBB27AE004B4DE8 /* AppDelegate.m */,
+				A09076381BBB27AE004B4DE8 /* ViewController.h */,
+				A09076391BBB27AE004B4DE8 /* ViewController.m */,
+				A090763B1BBB27AE004B4DE8 /* Main.storyboard */,
+				A090763E1BBB27AE004B4DE8 /* Assets.xcassets */,
+				A09076401BBB27AE004B4DE8 /* LaunchScreen.storyboard */,
+				A09076431BBB27AE004B4DE8 /* Info.plist */,
+				A09076321BBB27AE004B4DE8 /* Supporting Files */,
+			);
+			path = SLButtonSample;
+			sourceTree = "<group>";
+		};
+		A09076321BBB27AE004B4DE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A09076331BBB27AE004B4DE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A090762E1BBB27AE004B4DE8 /* SLButtonSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09076461BBB27AE004B4DE8 /* Build configuration list for PBXNativeTarget "SLButtonSample" */;
+			buildPhases = (
+				A090762B1BBB27AE004B4DE8 /* Sources */,
+				A090762C1BBB27AE004B4DE8 /* Frameworks */,
+				A090762D1BBB27AE004B4DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLButtonSample;
+			productName = SLButtonSample;
+			productReference = A090762F1BBB27AE004B4DE8 /* SLButtonSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A09076271BBB27AE004B4DE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ali Pourhadi";
+				TargetAttributes = {
+					A090762E1BBB27AE004B4DE8 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = A090762A1BBB27AE004B4DE8 /* Build configuration list for PBXProject "SLButtonSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A09076261BBB27AE004B4DE8;
+			productRefGroup = A09076301BBB27AE004B4DE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A090762E1BBB27AE004B4DE8 /* SLButtonSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A090762D1BBB27AE004B4DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09076421BBB27AE004B4DE8 /* LaunchScreen.storyboard in Resources */,
+				A090763F1BBB27AE004B4DE8 /* Assets.xcassets in Resources */,
+				A090763D1BBB27AE004B4DE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A090762B1BBB27AE004B4DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08B9D041BBC26520097D689 /* SLButton.m in Sources */,
+				A090763A1BBB27AE004B4DE8 /* ViewController.m in Sources */,
+				A09076371BBB27AE004B4DE8 /* AppDelegate.m in Sources */,
+				A09076341BBB27AE004B4DE8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A090763B1BBB27AE004B4DE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A090763C1BBB27AE004B4DE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A09076401BBB27AE004B4DE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A09076411BBB27AE004B4DE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A09076441BBB27AE004B4DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A09076451BBB27AE004B4DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A09076471BBB27AE004B4DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLButtonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AliPourhadi.SLButtonSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A09076481BBB27AE004B4DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLButtonSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AliPourhadi.SLButtonSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A090762A1BBB27AE004B4DE8 /* Build configuration list for PBXProject "SLButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09076441BBB27AE004B4DE8 /* Debug */,
+				A09076451BBB27AE004B4DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09076461BBB27AE004B4DE8 /* Build configuration list for PBXNativeTarget "SLButtonSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09076471BBB27AE004B4DE8 /* Debug */,
+				A09076481BBB27AE004B4DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A09076271BBB27AE004B4DE8 /* Project object */;
+}
