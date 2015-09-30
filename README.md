@@ -1,3 +1,7 @@
+
+![Before Loading](https://raw.githubusercontent.com/PersianDevelopers/SLButton/master/ScreenShot-1.png)
+![while Loading](https://raw.githubusercontent.com/PersianDevelopers/SLButton/master/ScreenShot-2.png)
+
 # SLButton
 
 Simple Loading Button
@@ -14,4 +18,5 @@ Optional Properties :
 # Methods Calling
 
 [obj showloading] to loading mode
+
 [obj hideLoading] to normal mode
