@@ -29,6 +29,10 @@
 @property float animationDuration;
 @property BOOL disableWhileLoading;
 
+@property (nonatomic, strong) NSMutableDictionary *actions;
+
+- (void)setComplationBlock:(void(^)())block forControlEvents:(UIControlEvents)controlEvents;
+
 - (void)showLoading;
 - (void)hideLoading;
 

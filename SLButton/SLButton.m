@@ -7,6 +7,7 @@
 //
 
 #import "SLButton.h"
+#import <objc/runtime.h>
 
 @interface SLButton ()
 @property (strong,nonatomic) UIActivityIndicatorView *activity;
@@ -15,6 +16,10 @@
 @end
 
 @implementation SLButton
+
+static char overviewKey;
+
+@dynamic actions;
 
 - (void)awakeFromNib {
     self.animationDuration = 0.3;
@@ -115,4 +120,43 @@
     [super layoutSubviews];
     [self setFrameForActivity];
 }
+
+#pragma mark - Block Action
+
+- (void)setComplationBlock:(void(^)())block forControlEvents:(UIControlEvents)controlEvents {
+	if ([self actions] == nil)
+		[self setActions:[[NSMutableDictionary alloc] init]];
+	
+	[[self actions] setObject:[block copy] forKey:[NSString stringWithFormat:@"%lu",(unsigned long)controlEvents]];
+	
+	// You can manage other control events with if/else
+	if (controlEvents == UIControlEventTouchUpInside)
+		[self addTarget:self action:@selector(doTouchUpInside:) forControlEvents:controlEvents];
+}
+
+- (void)setActions:(NSMutableDictionary*)actions {
+	objc_setAssociatedObject (self, &overviewKey,actions,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSMutableDictionary*)actions {
+	return objc_getAssociatedObject(self, &overviewKey);
+}
+
+- (void)doTouchUpInside:(id)sender {
+	[self showLoading];
+	
+	void(^block)();
+	block = [[self actions] objectForKey:[NSString stringWithFormat:@"%lu",(unsigned long)UIControlEventTouchUpInside]];
+	block();
+	
+	NSLog(@"In the doTouchUpInside Methode");
+	
+	// for example in order to show animation use a sample second.
+	[sender performSelector:@selector(hideLoading) withObject:nil afterDelay:3.0];
+	
+	// If you know your block wont be complated immediately, you can comment
+	// the performSelector and uncomment line below.
+	// [self hideLoading];
+}
+
 @end
