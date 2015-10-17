@@ -33,6 +33,8 @@
 
 - (void)setComplationBlock:(void(^)())block forControlEvents:(UIControlEvents)controlEvents;
 
+- (void)setBackgroundBlock:(void(^)())backgroundBlock MainThreadBlock:(void(^)())mainThreadBlock forControlEvents:(UIControlEvents)controlEvents;
+
 - (void)showLoading;
 - (void)hideLoading;
 

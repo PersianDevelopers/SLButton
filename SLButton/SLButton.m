@@ -10,6 +10,10 @@
 #import <objc/runtime.h>
 
 @interface SLButton ()
+{
+	void(^classBackgroundBlock)();
+	void(^classMainBlock)();
+}
 @property (strong,nonatomic) UIActivityIndicatorView *activity;
 @property (strong, nonatomic) NSString *currentText;
 @property CGRect currentBounds;
@@ -157,6 +161,36 @@ static char overviewKey;
 	// If you know your block wont be complated immediately, you can comment
 	// the performSelector and uncomment line below.
 	// [self hideLoading];
+}
+
+#pragma mark - Background and Main Block
+
+- (void)setBackgroundBlock:(void(^)())backgroundBlock MainThreadBlock:(void(^)())mainThreadBlock forControlEvents:(UIControlEvents)controlEvents {
+	
+	classBackgroundBlock = backgroundBlock;
+	classMainBlock = mainThreadBlock;
+	[self addTarget:self action:@selector(performActionBlock) forControlEvents:controlEvents];
+}
+
+- (void)performActionBlock {
+	
+	__weak typeof(self) weakSelf = self;
+	
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+		classBackgroundBlock();
+
+		// If you then need to execute something making sure
+		// it's on the main thread (updating the UI for example)
+		dispatch_async(dispatch_get_main_queue(), ^{
+
+			[weakSelf showLoading];
+			
+			classMainBlock();
+			
+			[weakSelf performSelector:@selector(hideLoading) withObject:nil afterDelay:3.0];
+		});
+	});
 }
 
 @end
