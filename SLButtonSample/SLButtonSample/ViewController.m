@@ -24,6 +24,7 @@
 	[centerButton setTitle:@"Center Button" forState:UIControlStateNormal];
 	[centerButton setBackgroundColor:[UIColor orangeColor]];
 	[centerButton setCenter:self.view.center];
+/*
 	[centerButton setComplationBlock:^{
 		
 		// You may want to fetch Data or Update UI etc. which takes along seconds.
@@ -33,6 +34,17 @@
 		
 		NSLog(@"In the Block Action");
 		
+	} forControlEvents:UIControlEventTouchUpInside];
+*/
+	
+	[centerButton setBackgroundBlock:^{
+	
+		NSLog(@"In the Background Thread");
+	
+	} MainThreadBlock:^{
+		
+		NSLog(@"In the Main Thread");
+
 	} forControlEvents:UIControlEventTouchUpInside];
 	
 	[self.view addSubview:centerButton];
