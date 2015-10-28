@@ -12,6 +12,7 @@
 @property (strong,nonatomic) UIActivityIndicatorView *activity;
 @property (strong, nonatomic) NSString *currentText;
 @property CGRect currentBounds;
+@property CGFloat currentCornerRadius;
 @end
 
 @implementation SLButton
@@ -43,6 +44,7 @@
 - (void)setCurrentData {
     [self setCurrentText:self.currentTitle];
     [self setCurrentBounds:self.bounds];
+    [self setCurrentCornerRadius:self.layer.cornerRadius];
 }
 
 - (void)clearText {
@@ -77,7 +79,7 @@
 - (void)reShapeAnimation {
     CABasicAnimation *shape = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
     shape.duration = (self.animationDuration * 3) / 5.0;
-    shape.toValue= @0;
+    shape.toValue= @(self.currentCornerRadius);
     shape.removedOnCompletion = FALSE;
     shape.fillMode = kCAFillModeForwards;;
     [self.layer addAnimation:shape forKey:@"re-shape"];
